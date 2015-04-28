@@ -1,20 +1,82 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
 
-<div class="home">
+<head>
+	<title> Matthew Mettler</title>
 
-  <h1>Posts</h1>
+	<link rel="stylesheet" type="text/css" href="css/theme.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="" />
+	<meta charset="UTF-8"> 
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="name">Matthew Mettler</div>
+		<ul class="list">
+			<li class="nav-item" style="padding-right:5px"><a target="_blank" href="http://linkedin.com/in/matthewrmettler">LinkedIn</a></li>
+			<li class="nav-item"><a target="_blank" href="http://github.com/matthewrmettler">GitHub</a></li>
+			<li class="nav-item"><a target="_blank" href="mailto:matthewrmettler@gmail.com">Email</a></li>
+		</ul>
+	</div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+	<div id="clock">
+		<canvas id="binary-clock" width="800" height="50">
+	    Your browser does not support the canvas element.
+		</canvas>
+	</div>
+	<script type="text/javascript" src="scripts/binary-clock.js"></script>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<p class="text">Hey there, welcome to my site! My name's Matt, I'm a web developer, programmer, and indie video game enthusiast. Here you'll find all of my projects, as well as links for you to e-mail me, or check out my GitHub or LinkedIn. </p>
 
-</div>
+	<br /><br />
+
+	<div class="category-title">Languages</div>
+	<div id="languages-holder">
+			<img src="images/html5_logo.png" alt="HTML5" class="language-icon">
+			<img src="images/css3_logo.png" alt="CSS" class="language-icon">
+			<img src="images/javascript_logo.png" alt="Javascript" class="language-icon">
+			<img src="images/jquery_logo.png" alt="Javascript" class="language-icon">
+	</div>
+
+	<br /><br />
+
+	</div>
+	<div class="category-title">Projects</div>
+	<div class="project-holder">
+			<div class="project-row">
+				<div class="project">
+					<div class="project-title">Digital Crisis Plan</div>
+					<div class="project-framework">Android</div>
+					<a target="_blank" href="http://mettler.arsu.net/dcp/digital_crisis_plan.html">
+					<img class="project-splash" src="https://lh3.ggpht.com/tF0V3f_YnF6D2VWaQOXYti1hkAnndNBCTDmuIB1oZ8SGuwBshyuZwWcStSHgOCSJwV8=w300" alt="Digital Crisis Plan">
+					</a>
+				</div>
+
+				<div class="project">
+					<div class="project-title">Arrowgate (PROTOTYPE)</div>
+					<div class="project-framework">Unity3D</div>
+					<a target="_blank" href="http://mettler.arsu.net/projects/arrowgate/arrowgate.html">
+					<img class="project-splash" src="http://i.imgur.com/xFj95xr.png" alt="Arrowgate">
+				</div> 
+
+				<div class="project">
+					<div class="project-title">NeonSnake (WIP)</div>
+					<div class="project-framework">Unity3D</div>
+					<a target="_blank" href="http://mettler.arsu.net/projects/neonsnake/neonsnake.html">
+					<img class="project-splash" src="http://i.imgur.com/2LtKmaa.png" alt="NeonSnake">
+				</div>
+			</div> 
+	</div>
+
+	    <script>
+	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	      ga('create', 'UA-57865617-1', 'auto');
+	      ga('send', 'pageview');
+    	</script>
+</body>
+
+</html>
